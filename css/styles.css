@@ -567,6 +567,11 @@ progress {
   content: "— ";
 }
 
+.img-card{
+  object-fit: cover;
+  object-position: center;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
