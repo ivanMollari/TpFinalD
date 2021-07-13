@@ -522,6 +522,10 @@ progress {
   }
 }
 
+.icono{
+  color: var(--bs-dark);
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -2963,14 +2967,16 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
+  color: var(--bs-dark);
   background-color: #ffc800;
   border-color: #ffc800;
 }
 .btn-primary:hover {
-  color: #fff;
+  color: var(--bs-dark);
   background-color: #d9aa00;
   border-color: #cca000;
+  border-color: var(--bs-yellow);
+	box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px var(--bs-yellow);
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;

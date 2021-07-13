@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Form Mount Olympus</title>
+  <!--Font awesome-->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <!--Estilos-->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css'>
   <link rel="stylesheet" href="css/styleForm.css">
+
+  
 
 </head>
 <body>
@@ -34,7 +39,7 @@
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="#" class="formulario" id="formulario">
 			<h1 class="title-form">Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -42,11 +47,30 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span class="text-form">O ingresa con tu cuenta</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<div class="formulario-grupo">
+				<div class="formulario-grupo-input">
+					<input class="formulario-input" type="email" placeholder="Email" />
+					<i class="fas fa-times-circle" id="icono-error"></i>
+				</div>
+				<p class="formulario-input-error">El mail no es valido</p>
+			</div>
+			<div class="formulario-grupo">
+				<div class="formulario-grupo-input">
+					<input class="formulario-input" type="password" placeholder="Password"  />
+					<i class="fas fa-times-circle" id="icono-error"></i>
+				</div>
+				<p class="formulario-input-error">El mail no es valido</p>
+			</div>
 			<a href="#" class="link-form">¿Te olvidaste la contraseña?</a>
-			<button>Sign In</button>
+			<div class="formulario-grupo formulario-grupo-boton-enviar">
+				<button type="submit" class="formulario-btn">Sign In</button>
+			</div>	
 			<button class="btn-sign-up-movil" id="signUpMov">Sign Up</button>
+
+			<div class="formulario-mensaje" id="formulario-mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i><b>Error:</b>Complete todos los campos</p>
+			</div>
+
 		</form>
 	</div>
 	<div class="overlay-container">

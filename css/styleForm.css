@@ -163,6 +163,64 @@ input:focus, input[type]:focus{
 	justify-content: space-between;
 }
 
+.formulario-grupo-input{
+	position: relative;
+}
+
+.formulario-input-error{
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario-input-error-activo{
+	display: block;
+}
+
+#icono-error{
+	position: absolute;
+	right: 10px;
+	bottom: 20px;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario-mensaje{
+	height: 45px;
+	line-height: 45px;
+	background: var(--bs-danger);
+	padding: o 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario-mensaje-activo{
+	display: block;
+}
+
+.formulario-grupo-correcto #icono-error{
+	color: var(--bs-green);
+	opacity: 1;
+}
+
+.formulario-grupo-incorrecto{
+	color: var(--bs-red);
+}
+
+.formulario-grupo-incorrecto #icono-error{
+	color: var(--bs-danger);
+	opacity: 1; 
+}
+
+.formulario-grupo-incorrecto .formulario-input{
+	border: 3px solid var(--bs-danger);
+}
+
+.formulario-mensaje p{
+	margin: 0;
+	padding: 10px;
+}
+
 .title-form, .text-form, .link-form{
 	color: var(--bs-light);
 }
