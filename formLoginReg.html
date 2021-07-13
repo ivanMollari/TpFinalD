@@ -16,7 +16,7 @@
 <body>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="#" class="formulario" id="formulario">
 			<h1 class="title-form">Crear cuenta</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -24,16 +24,45 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span class="text-form">O usa tu mail para registrarte</span>
-			<input type="text" placeholder="Name" />
-			<span class="text-form">Ingrese su peso</span>
-			<div class="container-input-peso">
-				<input class="input-peso" type="number" placeholder="Peso actual" />
-				<input class="input-peso" type="number" placeholder="Peso deseado" />
+			<div class="formulario-grupo" id="grupo-name">
+				<div class="formulario-grupo-input">
+					<input class="formulario-input" type="text" placeholder="Name" name="name" />
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
+				</div>
+				<p class="formulario-input-error">El nombre no es valido</p>
 			</div>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<span class="text-form">Ingrese su peso</span>
+			<div class="formulario-grupo" id="grupo-peso">
+				<div class="container-input-peso formulario-grupo-input">
+					<input class="input-peso formulario-input" type="number" name="peso1" placeholder="Peso actual" />
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
+					<input class="input-peso formulario-input" type="number" name="peso2" placeholder="Peso deseado" />
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
+				</div>
+				<p class="formulario-input-error">El peso esta mal</p>
+			</div>
+			<div class="formulario-grupo" id="grupo-mail">
+				<div class="formulario-grupo-input">
+					<input class="formulario-input" type="email" name="email" placeholder="Email" />
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
+				</div>
+				<p class="formulario-input-error">El mail no es valido</p>
+			</div>
+			<div class="formulario-grupo" id="grupo-password1">
+				<div class="formulario-grupo-input">
+					<input class="formulario-input" type="password" placeholder="Password" name="password1" id="password1"/>
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
+				</div>
+				<p class="formulario-input-error">La contraseña tiene que tener entre 4/12 caracteres</p>
+			</div>
 			<span class="text-form">Repita la contraseña</span>
-			<input type="password" placeholder="Password" />
+			<div class="formulario-grupo" id="grupo-password2">
+				<div class="formulario-grupo-input">
+					<input class="formulario-input" type="password" placeholder="Password" name="password2" id="password2"/>
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
+				</div>
+				<p class="formulario-input-error">La contraseña no es la misma</p>
+			</div>
 			<button>Sign Up</button>
 			<button class="btn-sign-up-movil" id="signInMov">Sign In</button>
 		</form>
@@ -47,19 +76,19 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span class="text-form">O ingresa con tu cuenta</span>
-			<div class="formulario-grupo">
+			<div class="formulario-grupo" id="grupo-mailR">
 				<div class="formulario-grupo-input">
-					<input class="formulario-input" type="email" placeholder="Email" />
-					<i class="fas fa-times-circle" id="icono-error"></i>
+					<input class="formulario-input" type="email" name="emailR" placeholder="Email" />
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
 				</div>
 				<p class="formulario-input-error">El mail no es valido</p>
 			</div>
-			<div class="formulario-grupo">
+			<div class="formulario-grupo" id="grupo-password">
 				<div class="formulario-grupo-input">
-					<input class="formulario-input" type="password" placeholder="Password"  />
-					<i class="fas fa-times-circle" id="icono-error"></i>
+					<input class="formulario-input" type="password" name="password" placeholder="Password"  />
+					<i class="iconoError fas fa-times-circle" id="icono-error"></i>
 				</div>
-				<p class="formulario-input-error">El mail no es valido</p>
+				<p class="formulario-input-error">La contraseña tiene que tener entre 4/12 caracteres</p>
 			</div>
 			<a href="#" class="link-form">¿Te olvidaste la contraseña?</a>
 			<div class="formulario-grupo formulario-grupo-boton-enviar">
@@ -91,6 +120,7 @@
 
 
 <script  src="js/scriptForm.js"></script>
+
 
 </body>
 </html>

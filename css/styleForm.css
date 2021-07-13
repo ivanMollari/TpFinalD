@@ -163,6 +163,10 @@ input:focus, input[type]:focus{
 	justify-content: space-between;
 }
 
+.formulario-grupo{
+	width: 100%;
+}
+
 .formulario-grupo-input{
 	position: relative;
 }
@@ -170,6 +174,7 @@ input:focus, input[type]:focus{
 .formulario-input-error{
 	font-size: 12px;
 	margin-bottom: 0;
+	margin-top: 0;
 	display: none;
 }
 
@@ -177,7 +182,7 @@ input:focus, input[type]:focus{
 	display: block;
 }
 
-#icono-error{
+.iconoError{
 	position: absolute;
 	right: 10px;
 	bottom: 20px;
@@ -189,7 +194,7 @@ input:focus, input[type]:focus{
 	height: 45px;
 	line-height: 45px;
 	background: var(--bs-danger);
-	padding: o 15px;
+	padding:15px;
 	border-radius: 3px;
 	display: none;
 }
@@ -198,7 +203,7 @@ input:focus, input[type]:focus{
 	display: block;
 }
 
-.formulario-grupo-correcto #icono-error{
+.formulario-grupo-correcto .iconoError{
 	color: var(--bs-green);
 	opacity: 1;
 }
@@ -207,7 +212,7 @@ input:focus, input[type]:focus{
 	color: var(--bs-red);
 }
 
-.formulario-grupo-incorrecto #icono-error{
+.formulario-grupo-incorrecto .iconoError{
 	color: var(--bs-danger);
 	opacity: 1; 
 }
