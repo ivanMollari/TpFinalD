@@ -126,6 +126,7 @@ button.ghost:focus, .overlay .overlay-left button:focus {
 button.btn-sign-up-movil{
 	opacity: 0;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 form {
@@ -192,9 +193,7 @@ input:focus, input[type]:focus{
 
 .formulario-mensaje{
 	height: 45px;
-	line-height: 45px;
 	background: var(--bs-danger);
-	padding:15px;
 	border-radius: 3px;
 	display: none;
 }
@@ -224,6 +223,23 @@ input:focus, input[type]:focus{
 .formulario-mensaje p{
 	margin: 0;
 	padding: 10px;
+	color: var(--bs-light);
+}
+
+.formulario-mensaje-exito{
+	height: 45px;
+	background: var(--bs-green);
+	padding: 10px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario-mensaje-exito-activo{
+	display: block;
+}
+
+.formulario-mensaje-exito b{
+	color: var(--bs-dark);
 }
 
 .title-form, .text-form, .link-form{
@@ -242,8 +258,8 @@ input:focus, input[type]:focus{
 	position: relative;
 	overflow: hidden;
 	width: 80%;
-	max-width: 900px;
-	min-height: 600px;
+	max-width: 100%;
+	min-height: 100%;
 }
 
 .form-container {
@@ -421,6 +437,19 @@ input:focus, input[type]:focus{
 	.sign-up-container h1{
 		margin-top: 230px;
 	}
+	.formulario-mensaje{
+		padding: 20px;
+	}
+	.formulario-mensaje p{
+		padding: 0;
+		line-height: 12px;
+	}
+	.formulario-mensaje-exito{
+		height: 50px;
+		line-height: 12px;
+		padding: 0;
+		background: var(--bs-green);
+	}
 }
 
 @media (max-width: 860px) {
@@ -439,5 +468,18 @@ input:focus, input[type]:focus{
 	}
 	button.btn-sign-up-movil{
 		opacity:1;
+	}
+	.formulario-mensaje{
+		padding: 8px;
+	}
+	.formulario-mensaje p{
+		padding: 0;
+		line-height: 12px;
+	}
+
+	.formulario-mensaje-exito{
+		line-height: 12px;
+		padding-top: 10px;
+		background: var(--bs-green);
 	}
 }
