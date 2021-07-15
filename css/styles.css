@@ -10908,6 +10908,10 @@ p {
   border-radius: 100%;
 }
 
+.team-member a:hover{
+  color: var(--bs-yellow);
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
